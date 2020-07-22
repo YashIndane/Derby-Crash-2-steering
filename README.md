@@ -1,1 +1,5 @@
 # Derby-Crash-2-steering
+
+![](https://img.shields.io/badge/python-3.8-red)
+![](https://img.shields.io/badge/contributers-1-brightgreen)
+![](https://img.shields.io/badge/license-MIT-green)
