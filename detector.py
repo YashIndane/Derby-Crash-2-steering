@@ -8,9 +8,10 @@ pyautogui.FAILSAFE = True
 cap = cv2.VideoCapture(0)
 
 frame_counter = 0
-frame_adjust = 1
+frame_adjust = 5
 sensitivity = 0.25
-SPEED = 15
+SPEED = 10
+time_of_action = 0.3
 #can tweak the above values
 
 while True : 
@@ -73,13 +74,13 @@ while True :
                     if slope >= sensitivity :
 
                          pyautogui.keyDown('left')
-                         time.sleep(0.5)
+                         time.sleep(time_of_action)
                          pyautogui.keyUp('left')
 
                     elif slope <= -sensitivity :
 
                          pyautogui.keyDown('right')
-                         time.sleep(0.5)
+                         time.sleep(time_of_action)
                          pyautogui.keyUp('right')
 
 
