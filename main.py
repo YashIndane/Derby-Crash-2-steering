@@ -13,7 +13,7 @@ pyautogui.FAILSAFE = True
 cap = cv2.VideoCapture(0)
 
 # This parameters can be changed accordingly
-FRAME_COUNTER = 0
+frame_counter = 0
 FRAME_ADJUST = 5
 SENSITIVITY = 0.25
 SPEED = 20
@@ -22,7 +22,7 @@ AREA_COMPARE = 6000
 
 while True : 
 
-    if FRAME_COUNTER % FRAME_ADJUST == 0 : pyautogui.press("up", presses = SPEED)
+    if frame_counter % FRAME_ADJUST == 0 : pyautogui.press("up", presses = SPEED)
 
     success, img_org = cap.read()
     img = cv2.cvtColor(img_org, cv2.COLOR_BGR2GRAY)
@@ -91,6 +91,6 @@ while True :
 
             except : pass    
 
-    FRAME_COUNTER += 1
+    frame_counter += 1
 
     if cv2.waitKey(1) & 0xFF == ord("q") : break
