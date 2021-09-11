@@ -4,5 +4,19 @@
 ![](https://img.shields.io/badge/contributers-1-brightgreen)
 ![](https://img.shields.io/badge/license-MIT-green)
 
+## Requirements
+
+### opencv
+
+```
+pip install opencv-python
+```
+
+### pyautogui
+
+```
+pip install pyautogui
+```
+
 # Use
-You just have to use whitescreen of your phone , and hold the screen towards the webcam. Now just steer your phone to drive or race a vehical in a game.
+You just have to use whitescreen of your phone , and hold the screen towards the webcam. Now just steer your phone to drive or race a vehical in any game.
