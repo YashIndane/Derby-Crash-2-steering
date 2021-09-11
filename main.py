@@ -16,7 +16,7 @@ cap = cv2.VideoCapture(0)
 frame_counter = 0
 FRAME_ADJUST = 5
 SENSITIVITY = 0.25
-SPEED = 20
+SPEED = 35
 TIME_OF_ACTION = 0.3
 AREA_COMPARE = 6000
 
@@ -75,19 +75,20 @@ while True :
 
                 # Calculating slope of edge of the rectangle
                 slope = (y2 - y1)/(x2 - x1)
-                print(slope)
 
                 if slope >= SENSITIVITY :
 
                     pyautogui.keyDown("left")
                     time.sleep(TIME_OF_ACTION)
                     pyautogui.keyUp("left")
+                    print(f"{slope} LEFT")
 
                 elif slope <= -SENSITIVITY :
 
                     pyautogui.keyDown("right")
                     time.sleep(TIME_OF_ACTION)
                     pyautogui.keyUp("right")
+                    print(f"{slope} RIGHT")
 
             except : pass    
 
