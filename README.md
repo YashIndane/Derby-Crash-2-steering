@@ -4,6 +4,9 @@
 ![](https://img.shields.io/badge/contributers-1-brightgreen)
 ![](https://img.shields.io/badge/license-MIT-green)
 
+Demo -> [link](https://www.linkedin.com/posts/yash-indane-aa6534179_programming-computervision-python-activity-6842866113341071361-OA4L)
+Demo -> [link2](https://www.youtube.com/watch?v=XN-ldJUoLuM)
+
 ## Requirements
 
 ### opencv
