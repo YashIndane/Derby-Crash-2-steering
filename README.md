@@ -13,13 +13,13 @@ Demo -> [link2](https://www.youtube.com/watch?v=XN-ldJUoLuM)
 ### opencv
 
 ```
-pip install opencv-python
+$ pip install opencv-python
 ```
 
 ### pyautogui
 
 ```
-pip install pyautogui
+$ pip install pyautogui
 ```
 
 # Use
